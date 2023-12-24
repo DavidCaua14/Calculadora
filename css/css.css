@@ -45,6 +45,20 @@ input[type=button]{
 }
 
 input[type=button]:hover{
-  background-color: #113be6;
+  background-color: #b5b6b9;
 }
 
+#visor {
+  width: 203px;
+  height: 30px;
+  border: 2px solid #ccc;
+}
+
+#visor.invalid {
+  border: 2px solid red;
+  color: red;
+}
+
+.red-background {
+  background-color: rgb(231, 67, 94);
+}

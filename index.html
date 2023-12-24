@@ -4,42 +4,45 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
     <meta name="" content="">
     <link rel="stylesheet" href="./css/css.css"/>
-    <script src="./js/estilo.js">
     </script>
     <title></title>
   </head>
   <body>
     <form name="calc">
       <div class="fundo">
-      <div id="calculadora">
-    <h1 style="color:#fff">CALCULADORA</h1>
-        <input type="text" name="visor" id="visor"/>
-      <div>
-          <input type="button" value="7" onclick="botao(value)"/>
-          <input type="button" value="8" onclick="botao(value)"/>
-          <input type="button" value="9" onclick="botao(value)"/>
-          <input type="button" value="-" onclick="botao(value)"/>
-        </div>
-      <div>
-          <input type="button" value="4" onclick="botao(value)"/>
-          <input type="button" value="5" onclick="botao(value)"/>
-          <input type="button" value="6" onclick="botao(value)"/>
-          <input type="button" value="+" onclick="botao(value)"/>
-        </div>
-      <div>
-          <input type="button" value="1" onclick="botao(value)"/>
-          <input type="button" value="2" onclick="botao(value)"/>
-          <input type="button" value="3" onclick="botao(value)"/>
-          <input type="button" value="*" onclick="botao(value)"/>
-        </div>
-    <div>
-           <input type="button" value="CE" onclick="reseta()"/>
-          <input type="button" value="0" onclick="botao(value)"/>
-          <input type="button" value="/" onclick="botao(value)"/>
-          <input type="button" value="=" onclick="calcula()"/>
+        <div id="calculadora">
+          <h1 style="color:#fff">CALCULADORA</h1>
+          <input type="text" name="visor" id="visor"/>
+          <div>
+            <input type="button" value="7" onclick="botao('7')"/>
+            <input type="button" value="8" onclick="botao('8')"/>
+            <input type="button" value="9" onclick="botao('9')"/>
+            <input type="button" value="-" onclick="botao('-')"/>
+          </div>
+          <div>
+            <input type="button" value="4" onclick="botao('4')"/>
+            <input type="button" value="5" onclick="botao('5')"/>
+            <input type="button" value="6" onclick="botao('6')"/>
+            <input type="button" value="+" onclick="botao('+')"/>
+          </div>
+          <div>
+            <input type="button" value="1" onclick="botao('1')"/>
+            <input type="button" value="2" onclick="botao('2')"/>
+            <input type="button" value="3" onclick="botao('3')"/>
+            <input type="button" value="*" onclick="botao('*')"/>
+          </div>
+          <div>
+            <input type="button" value="CE" onclick="reseta()"/>
+            <input type="button" value="0" onclick="botao('0')"/>
+            <input type="button" value="/" onclick="botao('/')"/>
+            <input type="button" value="=" onclick="calcula()"/>
+          </div>
+          <div>
+            <input type="button" value="." onclick="decimal()"/>
+          </div>
         </div>
       </div>
-     </div>
     </form>
+    <script src="./js/estilo.js"></script>
   </body>
 </html>
